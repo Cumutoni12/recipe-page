@@ -14,11 +14,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image.png](./image.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Cumutoni12/recipe-page](https://your-solution-url.com)
 - Live Site URL: [https://cumutoni12.github.io/recipe-page/](https://your-live-site-url.com)
 
 ### Built with
@@ -29,5 +29,5 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [https://github.com/Cumutoni12](https://www.your-site.com)
+- Frontend Mentor - [@Cumutoni12](https://www.frontendmentor.io/profile/Cumutoni12)
