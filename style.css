@@ -1,12 +1,81 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  /* margin: 0; */
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
 .body {
   font-size: 16px;
+  font-weight: 100;
+  margin-left: 45px;
+  line-height: 1.5;
 }
 .wrapper {
-  background-color: rgba(255, 235, 205, 0.674);
-  /* height: 100vh; */
+  background-color: hsl(30, 54%, 90%);
   display: flex;
-  /* text-align: center; */
-  /* align-items: center; */
   justify-content: center;
   position: relative;
 }
@@ -14,36 +83,36 @@
 .card {
   background-color: white;
   height: 70%;
-  width: 70%;
-  display: flex;
+  width: 60%;
   flex-direction: column;
-  padding: 55px;
+  margin-top: 75px;
   font-size: 16px;
-  font-family: young;
-  font-weight: 400;
+  font-family: "Young Serif", serif;
+  padding: 25px;
+  border-radius: 10px;
+}
+.content {
+  width: 100%;
 }
 
 .image {
-  margin-bottom: 20px;
-  display: flex;
-  position: relative;
-  left: 102px;
+  width: 100%;
 }
 
 .image img {
   border-radius: 10px;
-  width: 75%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 0px;
 }
 
 .prep {
-  color: red;
-  font-size: 16px;
+  color: hsl(332, 51%, 32%);
 }
 
 .time {
-  background-color: rgb(228, 203, 226);
-}
+  background-color:hsl(310.53deg 23% 79% /27%);
+  padding: 5px;
+}hue
 #ingr {
   border-bottom: 1px solid rgb(111, 110, 110);
 }
@@ -51,27 +120,55 @@
 .inst,
 .nutr,
 .nmbr {
-  color: red;
+  color: hsl(332, 51%, 32%);
 }
 
 .instr {
   border-bottom: 1px solid rgb(111, 110, 110);
+  margin-bottom: 1px;
 }
 .metrics {
-  position: relative;
-  left: 100px;
-  color: red;
+  color: hsl(332, 51%, 32%);
+  padding-left: 100px;
 }
 
 ol li::marker,
 ul li::marker {
-  color: red;
+  color: hsl(332, 51%, 32%);
 }
 
 #para {
-  font-size: large;
-  font-weight: 100;
-  /* display: flex;
-  text-align: center;
-  align-items: center;
-} */
+  font-size: 16px;
+  font-weight: inherit;
+}
+
+.cal {
+  display: flex;
+  gap: 300px;
+}
+
+.unites {
+  color: brown;
+  text-align: right;
+}
+
+hr {
+  position: relative;
+  bottom: 20px;
+  color: brown;
+}
+
+#zero {
+  position: relative;
+  left: 18px;
+  color: brown;
+}
+#twenty {
+  margin-left: 7px;
+  color: brown;
+}
+#twentytwo {
+  margin-left: 27px;
+  color: brown;
+}
+
