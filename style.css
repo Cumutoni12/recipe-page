@@ -7,7 +7,7 @@
 
 /* 2. Remove default margin */
 * {
-  /* margin: 0; */
+  margin: 0;
 }
 
 body {
@@ -59,9 +59,7 @@ h6 {
   text-wrap: balance;
 }
 
-/*
-  9. Create a root stacking context
-*/
+/* 9. Create a root stacking context */
 #root,
 #__next {
   isolation: isolate;
@@ -73,6 +71,7 @@ h6 {
   margin-left: 45px;
   line-height: 1.5;
 }
+
 .wrapper {
   background-color: hsl(30, 54%, 90%);
   display: flex;
@@ -82,7 +81,7 @@ h6 {
 
 .card {
   background-color: white;
-  height: 70%;
+  height: auto;
   width: 60%;
   flex-direction: column;
   margin-top: 75px;
@@ -91,6 +90,7 @@ h6 {
   padding: 25px;
   border-radius: 10px;
 }
+
 .content {
   width: 100%;
 }
@@ -102,7 +102,7 @@ h6 {
 .image img {
   border-radius: 10px;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .prep {
@@ -110,12 +110,14 @@ h6 {
 }
 
 .time {
-  background-color:hsl(310.53deg 23% 79% /27%);
+  background-color: hsl(310.53deg 23% 79% / 27%);
   padding: 5px;
-}hue
+}
+
 #ingr {
   border-bottom: 1px solid rgb(111, 110, 110);
 }
+
 .ingre,
 .inst,
 .nutr,
@@ -127,6 +129,7 @@ h6 {
   border-bottom: 1px solid rgb(111, 110, 110);
   margin-bottom: 1px;
 }
+
 .metrics {
   color: hsl(332, 51%, 32%);
   padding-left: 100px;
@@ -163,12 +166,59 @@ hr {
   left: 18px;
   color: brown;
 }
+
 #twenty {
   margin-left: 7px;
   color: brown;
 }
+
 #twentytwo {
   margin-left: 27px;
   color: brown;
 }
 
+@media (max-width: 1440px) {
+  .body {
+    margin-left: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .metrics {
+    padding-left: 50px;
+  }
+
+  .cal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  hr {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .body {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .image img {
+    border-radius: 5px;
+  }
+
+  .cal {
+    gap: 10px;
+  }
+
+  .metrics {
+    padding-left: 20px;
+  }
+}
